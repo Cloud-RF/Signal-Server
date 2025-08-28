@@ -16,13 +16,15 @@ https://github.com/valderez/Signal-Server (Oldie from 2013, 6*)
 
 Signal-Server was developed in 2011 by Alex Farrant to power a hobby app called RFSignal which became CloudRF. It started as a fork of SPLAT! 1.3 which powered the first version of the app. RFSignal was retired in 2015 due to rampant piracy caused by a immature API design and a reluctance to pay Google 30% for the privilege.
 
+![RFSignal for Android](img/RFSignal_Android_2011.jpg)
+
 ## SPLAT! 
 SPLAT! was an older open source RF simulation program developed by John Magliacane, callsign KD2BD. [https://www.qsl.net/kd2bd/splat.html](https://www.qsl.net/kd2bd/splat.html)
 The application featured in amateur radio publications as far back as 2005 and [2008](https://www.arrl.org/news/em-surfin-em-splat-that-path-online).
 
 SPLAT! was a Linux command line utility which required the creation of several text files containing variables prior to execution which was a common design pattern for Linux engineering software around the millenium.
 
-The application was based around a public domain Irregular Terrain Model (ITM) v3.0a, published by the NTIA/ITS. The model was a C++ rewrite of FOTRAN code with optimisations by J.D McDonald, John A Magliacane and Sid Shumate (2007).
+The application was based around a public domain Irregular Terrain Model (ITM) v3.0a, published by the NTIA/ITS. The model was a C++ rewrite of FORTRAN code with optimisations by J.D McDonald, John A Magliacane and Sid Shumate (2007).
 
     /********************************************************************************
     * ITWOM version 3.0a, January 20, 2011  File: itwom3.0a.cpp                     *
@@ -113,6 +115,10 @@ Version 1.3.8 included the ITM, Hata and LOS models and could do 30m resolution.
 
 https://github.com/valderez/Signal-Server/commits/dac9688976a7851927ed5d3c1fdf4ee8242d45f7/
 
+Early screenshots are available on the twitter feed for @cloudrfdotcom
+
+![Early Signal Server development](img/more-models-2013.jpg)
+
 ## Multi-threading - 2015
 
 The primary improvement over SPLAT! was multi-threading. The first attempt at this split the circle so two threads could parallel process and the output images could be stitched later.
@@ -127,11 +133,14 @@ https://github.com/N9OZB/Signal-Server/commit/523cb1e7366d1043aa76d8003741fb71bf
 ## LiDAR - 2016
 
 Following intense hacking by Alex during xmas holidays in 2015, LiDAR support was achieved in v2.7.
-The headline was a notable **2m resolution** albeit with slow and large ASCII grid text files.
+The headline was a notable **1m resolution** albeit with slow and large ASCII grid text files.
 
-This commit, and the countless failures that led to it, was the highlight of this application's development. It would prove a buggy implementation but significant for urban planning:
+This commit, and the countless failures that led to it, was the highlight of this application's development and coincided with the publishing of public LiDAR at USGS and the UK Environment Agency. It would prove a buggy implementation but significant for urban planning:
 
 https://github.com/N9OZB/Signal-Server/commit/a9c1916017e43dcd5d778dee77ffa0be2b0d5cd9
+
+Best tweet ever:
+![Best tweet ever](img/best-tweet-ever.jpg)
 
 ## Improvements - 2016 to 2018
 
@@ -139,7 +148,10 @@ The two years following the LiDAR breakthrough saw a steady rate of improvements
 
 ## End of the line - 2018
 
-The commit history throughout 2018 shows clearly the frustration with repeatedly fixing the design and attempting to handle different resolution raster tiles. This was becoming increasingly difficult and a decision was taken to start over and design a new application, purpose built for modern CPU features and designed with diverse data sets from the outset. This became [SLEIPNIR](https://cloudrf.com/sleipnir-propagation-engine) which continues to power CloudRF today.
+The commit history throughout 2018 shows clearly the frustration with repeatedly fixing the design and attempting to handle different resolution raster tiles. 
+![Tile issues](img/signal-server-tile-issues-2018.jpg)
+
+This was becoming increasingly difficult and a decision was taken to start over and design a new application, purpose built for modern CPU features and designed with diverse data sets from the outset. This became [SLEIPNIR](https://cloudrf.com/sleipnir-propagation-engine) which continues to power CloudRF today.
 
 ## Maintenance - 2018 to 2023
 
@@ -151,15 +163,23 @@ COVID-19 saw a spike in fork activity which resulted in new tools and interfaces
 
 ## SignalServer web interface(s) 
 
-In 2021, Thetacom published a GUI for Signal-Server:
+In 2021, Thetacom published a modern web GUI for Signal-Server which was demonstrated to good effect by @cemaxecutor on youtube:
+
 https://github.com/thetacom/signalserver_gui
 
-In 2022, the author of the 2008 SPLAT! web interface, Bill Walker W5GFE, updated his interface scripts to work with Signal Server. His SignalServer project had a hosted service and can generate KMZ files but it is not on Github at the time of writing: 
+https://www.youtube.com/watch?v=drknflEyiZ4
+
+![Signal Server web GUI](img/thetacom-signal-server-gui.jpg)
+
+In 2022, the author of the 2008 SPLAT! web interface, Bill Walker W5GFE, updated his interface scripts to work with Signal Server. His SignalServer project has a hosted service and can generate KMZ files but the source is not in public version control. 
 
 https://signalserver.okiefrog.org/
 
+![Signal Server presentation](img/signalserverpresentation.jpg)
+
 Signal-Server and the SignalServer interface are available on the popular DragonOS Linux distribution maintained by Aaron F (cemaxecuter@protonmail.com).
 
+https://sourceforge.net/projects/dragonos-focal/
 
 ## Project closure - 2023
 
@@ -177,7 +197,7 @@ https://github.com/W3AXL/Signal-Server (Updated 2025, 9*)
 
 ## Thank you!
 
-Thanks to everyone who gave feedback, opened PRs, gave accurate attribution and supported this project.
+Thanks to everyone who gave feedback, opened PRs, gave accurate attribution and supported this project. 
 
 Hopefully this chronicle of amateur to professional development and setbacks will provide hope to anyone embarking on a similar journey into the world of software development.
 
