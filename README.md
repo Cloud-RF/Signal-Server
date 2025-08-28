@@ -19,6 +19,7 @@ Signal-Server was developed in 2011 by Alex Farrant to power a hobby app called 
 ![RFSignal for Android](img/RFSignal_Android_2011.jpg)
 
 ## Authors
+The following individuals have contributed to the SPLAT! and Signal-Server code base:
 
 J. D. McDonald, John A. Magliacane, Sid Shumate, Alex Farrant, Gareth Evans, Michael Ramnarine, Aaron Collins
 
