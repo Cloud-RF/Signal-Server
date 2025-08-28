@@ -2,7 +2,7 @@
 
 ## About
 
-This repository contains the history of Signal-Server, an open source RF simulation program developed and maintained by CloudRF between 2011 and 2023. 
+This repository contains the history of Signal-Server, an open source GPLv2 RF simulation program developed and maintained by CloudRF between 2011 and 2023. 
 
 CloudRF no longer maintains or uses this software but if you would like the source code you can get it from these forks on Github:
 
@@ -17,6 +17,11 @@ https://github.com/valderez/Signal-Server (Oldie from 2013, 6*)
 Signal-Server was developed in 2011 by Alex Farrant to power a hobby app called RFSignal which became CloudRF. It started as a fork of SPLAT! 1.3 which powered the first version of the app. RFSignal was retired in 2015 due to rampant piracy caused by a immature API design and a reluctance to pay Google 30% for the privilege.
 
 ![RFSignal for Android](img/RFSignal_Android_2011.jpg)
+
+## Authors
+
+J. D. McDonald, John A. Magliacane, Sid Shumate, Alex Farrant, Gareth Evans, Michael Ramnarine, Aaron Collins
+
 
 ## SPLAT! 
 SPLAT! was an older open source RF simulation program developed by John Magliacane, callsign KD2BD. [https://www.qsl.net/kd2bd/splat.html](https://www.qsl.net/kd2bd/splat.html)
